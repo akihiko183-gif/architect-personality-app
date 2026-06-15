@@ -10,7 +10,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("🏛️ 建築人格アプリ")
+st.title("🏛️ 有名建築あだ名メーカー")
 
 st.caption(
     "建築作品を人格分析し、特徴やエピソードをもとにあだ名を命名します。"
@@ -62,7 +62,7 @@ if st.button(
         )
 
         with st.spinner(
-            "建築情報を整理中..."
+            "🤔建築情報を整理中..."
         ):
 
             research_text = research_building(
