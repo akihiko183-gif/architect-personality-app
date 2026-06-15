@@ -5,7 +5,7 @@ from research import research_building
 from nickname import create_nickname
 
 st.set_page_config(
-    page_title="建築人格アプリ",
+    page_title="有名建築あだ名メーカー",
     page_icon="🏛️",
     layout="wide"
 )
@@ -13,14 +13,14 @@ st.set_page_config(
 st.title("🏛️ 建築人格アプリ")
 
 st.caption(
-    "建築作品を人格分析し、特徴やエピソードをもとにあだ名を生成します。"
+    "建築作品を人格分析し、特徴やエピソードをもとにあだ名を命名します。"
 )
 
 st.markdown("---")
 
 building_name = st.text_input(
     "建築作品名",
-    placeholder="例：ROGIC、都庁、サヴォア"
+    placeholder="例：東大寺南大門、都庁、サヴォア邸"
 )
 
 extra_info = st.text_area(
@@ -28,9 +28,9 @@ extra_info = st.text_area(
     height=150,
     placeholder="""
 例：
-
+所在地
 日本建築学会賞受賞
-小堀哲夫設計
+設計者名
 風と光を活かした研究施設
 """
 )
